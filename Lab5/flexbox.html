@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT_ASSIGNMENT_3</title>
+    <style>
+       h1 {
+  background-color: rgb(71, 18, 218);
+  padding: 20px;
+  border:3px solid rgb(16, 231, 63);
+  color: rgb(248, 76, 8);
+            text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 20px;
+  }
+}
+       
+        .flex-container {
+               display: flex;
+               background-color: rgb(216, 207, 221);
+}
+
+.flex-container > div {
+  background-color: #eb0505;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.flex-container1{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(223, 218, 228);
+}
+.flex-container1 > div{
+    background-color: #f01818;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(103, 21, 211);
+}
+
+.flex-container2 > div {
+  background-color: #e7dfdf;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container3 {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgb(30, 255, 30);
+}
+
+.flex-container3 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container4 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(17, 64, 110);
+}
+
+.flex-container4 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container5 {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  background-color: rgb(52, 8, 78);
+}
+
+.flex-container5 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.flex-container6 {
+  display: flex;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-around;
+  overflow: scroll;  
+  background-color: rgb(203, 28, 238);
+}
+
+.flex-container6 > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <h1>CSS FLEX BOX</h1>
+    <div class="flex-container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+
+      <h1>CSS FLEX BOX - FLEX DIRECTION PROPERTY</h1>
+      <div class="flex-container1">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+
+      <h1>CSS FLEX BOX - FLEX WRAP PROPERTY</h1>
+      <div class="flex-container2">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>  
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>  
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>  
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>  
+      </div>
+
+      <h1>CSS FLEX BOX -  FLEX-FLOW PROPERTY</h1>
+      <div class="flex-container3">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>  
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>  
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>  
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>  
+      </div>
+      <h1>CSS FLEX BOX - JUSTIFY-CONTENT Property</h1>
+    <div class="flex-container4">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+      <h1>CSS FLEX BOX - ALIGN ITEMS Property</h1>
+    <div class="flex-container4">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+      </div>
+      <h1>CSS FLEX BOX - ALIGN CONTENT Property</h1>
+      <div class="flex-container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>  
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>  
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>  
+      </div>
+
+</body>
+</html>
