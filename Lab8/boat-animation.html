@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.abc{ 
+    padding-top: 32%;
+    position: absolute;
+    
+     animation: run 3s linear infinite;
+     animation-name: run;
+     animation-duration: 10s;
+     animation-delay: 5s;
+}
+@keyframes run 
+{
+  0% { left:0;     transition: rotate(0);}
+  25% { left: 50%; transition: rotate(-2deg);}
+  50% { left: 100%; transition: rotate(-3deg);}
+  75% { left: 50%; transition: rotate(-2deg);}
+  100% { left:0; transition: rotate(0);}
+}
+</style>
+   
+    <div>
+        <img class="abc" src="./boat-png-30381.png" width="25%"></img>
+        <img src="./water-png-17269.png" width=100% height="auto"></img>
+    </div>
+
+    
+</body>
+</html>
