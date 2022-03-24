@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="number1"></div>
+    <div id="number2"></div>
+  
+    <script>
+        // Number can be written with or without decimal
+        // let num1 = 5.565;
+        // let num2 = 9;
+
+        // extra large and extra small number can be written with exponent
+        // let num1 = 123e10;
+        // let num2 = 123e-10;
+
+        //Numbers without a period or exponent notation are accurate up to 15 digits.
+        // let num1 = 999999999999999;
+        // let num2 = 9999999999999999;
+
+        // document.getElementById('number1').innerHTML = num1+ "<br>"+ num2;`
+
+
+        //If you add two numbers the result will be number
+        // let num1 = 40;
+        // let num2 = 90;
+        // let result = num1+num2;
+
+        //If you add a number and numeric string the result will be a concatenated string
+        // let num1 = 70;
+        // let num2 = "80";
+        // let result = num1+num2;
+
+        // document.getElementById('number1').innerHTML = num1 +" + "+ num2 +" = "+result;
+
+
+        // Javascript will convert string to number when dividing and multiplying and subtracting
+      
+        let x = "1000";
+        let y = "100";
+        let div = x / y;
+        let mul = x * y;
+        let subtract = x - y;
+
+        document.getElementById('number1').innerHTML = div + "<br>" + mul + "<br>" + subtract;
+
+
+        // JS number as a object 
+        let a = 1235;
+        let b = new Number(1235);
+
+        document.getElementById('number2').innerHTML = typeof a + "<br>" + typeof b + "<br>" + (a == b) + "<br>" + (a === b);
+
+    </script>
+</body>
+
+</html>
