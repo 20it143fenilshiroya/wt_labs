@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>email validation with js</title>
+<style>
+li
+{
+    list-style-type: none;
+    font-size: 16pt;
+}
+.mail 
+{
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 800px;
+    background : rgb(207, 211, 153);
+    border: 1px soild rgb(1, 20, 24);
+}
+.mail h2 
+{
+    margin-left: 38px;
+}
+input {
+font-size: 20pt;
+}
+input:focus, textarea:focus{
+background-color: lightyellow;
+}
+input submit {
+font-size: 10pt;
+}
+  </style>
+</head>
+<body onload='document.form1.text1.focus()'>
+   <div class="mail">
+   <h2>Enter email to Validate</h2>
+<form name="form1" action="#">
+ <ul>
+  <li><input type='text' name='text1'/></li>
+  <li>&nbsp;</li>
+  <li class="Validate"><input type="submit" name="Validate" value="Validate" onclick="ValidateEmail(document.form1.text1)"/></li>  
+  <li>&nbsp;</li>
+ </ul>
+</form>
+</div>
+<script>
+function ValidateEmail(inputText)
+{
+   var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
+   if(inputText.value.match(mailformat))
+   {
+     alert("You have entered a valid email address!");    
+     document.form1.text1.focus();
+    return true;
+   }
+   else
+   {
+     alert("You have entered an invalid email address!");    
+     document.form1.text1.focus();
+    return false;
+   }
+}
+</script>
+</body>
+</html>
