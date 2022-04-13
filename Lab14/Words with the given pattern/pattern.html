@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find words with given pattern</title>
+  <style>
+    body{
+      background-color: rgb(91, 13, 13);
+    }
+    but {
+      margin-left: 500px;
+      margin-top: 800px;
+      width: 150px;
+      font-size: 25px;
+      background-color: rgb(146, 29, 255);
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <button id="but" onclick="WithPattern()">Enter Pattern:</button>
+  </div>
+  <script>
+    function WithPattern() {
+        let p = /M.d[a-z]+y/;
+        alert("Your entered pattern have First char is M and third char is d and last char is y.");
+        let word = prompt("Enter word");
+        if (p.test(word)) 
+        alert("Pattern is valid");
+        else 
+        alert("Pattern is invalid");
+    }
+  </script>
+</body>
+
+</html>
